@@ -151,5 +151,4 @@ Feedstock Maintainers
 =====================
 
 * [@tomvothecoder](https://github.com/tomvothecoder/)
-* [@jasonb5](https://github.com/jasonb5/)
 
