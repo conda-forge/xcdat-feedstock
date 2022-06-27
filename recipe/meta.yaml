@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/XCDAT/xcdat/archive/v{{ version }}.tar.gz
-  sha256: fd315cb5806df6476b0f9de8f0e2f76ecf2cbba2cd53dd6ca28d8d6a8e5e9276
+  sha256: b82c09532d0ca139bb608e3cdc2abe8e4931c74231b7a9aa2f819cab8a5a4932
 
 build:
   number: 0
