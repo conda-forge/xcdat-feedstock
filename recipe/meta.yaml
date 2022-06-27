@@ -1,5 +1,5 @@
 {% set name = "xcdat" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/XCDAT/xcdat/archive/v{{ version }}.tar.gz
-  sha256: fd315cb5806df6476b0f9de8f0e2f76ecf2cbba2cd53dd6ca28d8d6a8e5e9276
+  sha256: b82c09532d0ca139bb608e3cdc2abe8e4931c74231b7a9aa2f819cab8a5a4932
 
 build:
   number: 0
@@ -16,15 +16,19 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
     - setuptools
   run:
-    - python >=3.7
+    - python >=3.8
     - cf_xarray
+    - cftime
     - dask
+    - esmpy
+    - xesmf
     - netcdf4
     - numpy
+    - numba
     - pandas
     - xarray
 
@@ -36,7 +40,7 @@ about:
   home: https://github.com/XCDAT/xcdat
   license: Apache-2.0
   license_file: LICENSE
-  summary: 'Xarray Extended with Climate Data Analysis Tools'
+  summary: 'Xarray Climate Data Analysis Tools'
   description: |
     An extension of xarray with general and climate domain specific functions and utilities.
   doc_url: https://xcdat.readthedocs.io
