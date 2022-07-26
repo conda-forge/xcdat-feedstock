@@ -10,7 +10,7 @@ source:
   sha256: b82c09532d0ca139bb608e3cdc2abe8e4931c74231b7a9aa2f819cab8a5a4932
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -28,7 +28,7 @@ requirements:
     - xesmf
     - netcdf4
     - numpy
-    - numba
+    - numba >=0.55.2
     - pandas
     - xarray
 
