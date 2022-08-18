@@ -13,7 +13,7 @@ Development: https://github.com/XCDAT/xcdat
 
 Documentation: https://xcdat.readthedocs.io
 
-An extension of xarray with general and climate domain specific functions and utilities.
+An extension of xarray with generalizable climate domain specific functions and utilities.
 
 
 Current build status
