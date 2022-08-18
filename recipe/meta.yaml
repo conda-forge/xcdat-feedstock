@@ -1,5 +1,5 @@
 {% set name = "xcdat" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/XCDAT/xcdat/archive/v{{ version }}.tar.gz
-  sha256: b82c09532d0ca139bb608e3cdc2abe8e4931c74231b7a9aa2f819cab8a5a4932
+  sha256: 03ce26f4e935f1a3d9d94c05de0bae338c88ac085a99ea9a546be1e59d5b0ba7
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -42,7 +42,7 @@ about:
   license_file: LICENSE
   summary: 'Xarray Climate Data Analysis Tools'
   description: |
-    An extension of xarray with general and climate domain specific functions and utilities.
+    An extension of xarray with generalizable climate domain specific functions and utilities.
   doc_url: https://xcdat.readthedocs.io
   dev_url: https://github.com/XCDAT/xcdat
 
