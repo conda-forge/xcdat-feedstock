@@ -26,8 +26,8 @@ requirements:
     - dask
     - esmpy
     - netcdf4
-    - numpy
     - numba >=0.55.2
+    - numpy
     - pandas
     - python-dateutil
     - xarray
