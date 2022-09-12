@@ -10,7 +10,7 @@ source:
   sha256: 03ce26f4e935f1a3d9d94c05de0bae338c88ac085a99ea9a546be1e59d5b0ba7
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -25,12 +25,13 @@ requirements:
     - cftime
     - dask
     - esmpy
-    - xesmf
     - netcdf4
     - numpy
     - numba >=0.55.2
     - pandas
+    - python-dateutil
     - xarray
+    - xesmf
 
 test:
   imports:
