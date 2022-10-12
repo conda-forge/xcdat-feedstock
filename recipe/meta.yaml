@@ -29,7 +29,7 @@ requirements:
     - numpy
     - pandas
     - python-dateutil
-    - xarray>=0.21.0
+    - xarray >=0.21.0
   run_constrained:
     - xesmf >=0.6
 
