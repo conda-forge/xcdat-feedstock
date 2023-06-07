@@ -1,5 +1,5 @@
 {% set name = "xcdat" %}
-{% set version = "0.5.0" %}
+{% set version = "0.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/XCDAT/xcdat/archive/v{{ version }}.tar.gz
-  sha256: 83a47f265e4e9263ba58a9cb895b72a1f009552c16d7264bc1318d7a75fce44d
+  sha256:
 
 build:
   number: 0
@@ -30,8 +30,9 @@ requirements:
     - pandas
     - python-dateutil
     - xarray >=0.21.0
+    - xgcm
   run_constrained:
-    - xesmf >=0.6
+    - xesmf >=0.7
 
 test:
   imports:
