@@ -8,6 +8,8 @@ package:
 source:
   url: https://github.com/XCDAT/xcdat/archive/v{{ version }}.tar.gz
   sha256: 83a47f265e4e9263ba58a9cb895b72a1f009552c16d7264bc1318d7a75fce44d
+  patches:
+    - 0001-fix-attrs-dropping.patch
 
 build:
   number: 1
@@ -24,7 +26,7 @@ requirements:
     - cf_xarray
     - cftime
     - dask
-    - lxml
+    - lxml  # TODO: Remove this in v0.7.0 once cdml/XML support is dropped
     - netcdf4
     - numpy >=1.23.0 # This version of numpy includes support for Python 3.11.
     - pandas
