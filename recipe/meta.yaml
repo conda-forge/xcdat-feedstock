@@ -12,7 +12,7 @@ source:
     - 0001-fix-attrs-dropping.patch
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -23,7 +23,7 @@ requirements:
     - setuptools
   run:
     - python >=3.9
-    - cf_xarray
+    - cf_xarray >=0.7.3 # Constrained because https://github.com/xarray-contrib/cf-xarray/issues/467
     - cftime
     - dask
     - lxml  # TODO: Remove this in v0.7.0 once cdml/XML support is dropped
