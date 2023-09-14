@@ -24,7 +24,7 @@ requirements:
   run:
     - python >=3.9
     - cf_xarray
-    - cftime
+    - cftime >=0.7.3 # Constrained because https://github.com/xarray-contrib/cf-xarray/issues/467
     - dask
     - lxml  # TODO: Remove this in v0.7.0 once cdml/XML support is dropped
     - netcdf4
