@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/XCDAT/xcdat/archive/v{{ version }}.tar.gz
-  sha256:
+  sha256: ed6742e0ffa74226c6966f6b2f61d5788f360c4c11c9a8430751315d53381ab2
 
 build:
   number: 0
@@ -30,6 +30,7 @@ requirements:
     - pandas
     - python-dateutil
     - xarray >=2022.02.0 # This version of Xarray drops support for Python 3.8.
+    - xgcm
   run_constrained:
     - xesmf >=0.7.0 # Constrained because https://github.com/pangeo-data/xESMF/issues/212
 
