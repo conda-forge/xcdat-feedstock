@@ -1,5 +1,5 @@
 {% set name = "xcdat" %}
-{% set version = "0.6.1" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/XCDAT/xcdat/archive/v{{ version }}.tar.gz
-  sha256: 950f023d857452e4dbd496ea7bb45d5b782cab3b21bf1fe7809a4ca8beaaa488
+  sha256: e8d03ebe94e1afb749ffd87f60be96df78d7d596be86c93ddff4c9659807fbeb
 
 build:
   number: 0
@@ -21,16 +21,15 @@ requirements:
     - setuptools
   run:
     - python >=3.9
-    - cf_xarray >=0.7.3 # Constrained because https://github.com/xarray-contrib/cf-xarray/issues/467
+    - cf_xarray >=0.7.3
     - cftime
     - dask
-    - lxml  # TODO: Remove this in v0.7.0 once cdml/XML support is dropped
     - netcdf4
-    - numpy >=1.23.0 # This version of numpy includes support for Python 3.11.
+    - numpy >=1.23.0
     - pandas
     - python-dateutil
-    - xarray >=2022.02.0 # This version of Xarray drops support for Python 3.8.
-    - xesmf >=0.7.0 # Constrained because https://github.com/pangeo-data/xESMF/issues/212
+    - xarray >=2022.02.0
+    - xesmf >=0.7.0
     - xgcm
 
 test:
