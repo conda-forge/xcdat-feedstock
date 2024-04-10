@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/XCDAT/xcdat/archive/v{{ version }}.tar.gz
-  sha256:
+  sha256: e8d03ebe94e1afb749ffd87f60be96df78d7d596be86c93ddff4c9659807fbeb
 
 build:
   number: 0
@@ -24,7 +24,6 @@ requirements:
     - cf_xarray >=0.7.3
     - cftime
     - dask
-    - lxml  # TODO: Remove this lxlml once cdml/XML support is dropped.
     - netcdf4
     - numpy >=1.23.0
     - pandas

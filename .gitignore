@@ -22,3 +22,6 @@
 /build_artifacts
 
 *.pyc
+
+# GitHub software release file
+*.tar.gz
