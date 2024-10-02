@@ -1,5 +1,5 @@
 {% set name = "xcdat" %}
-{% set version = "0.7.1" %}
+{% set version = "0.7.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/XCDAT/xcdat/archive/v{{ version }}.tar.gz
-  sha256: b3ff94c5de06f0e560df64569ec36873965ef1239b991651142ae69f399676d7
+  sha256: c16f7ce865388fa0ed963dd61fab032f72d483c2f0b61e745ca0e60d919024f4
 
 build:
   number: 0
