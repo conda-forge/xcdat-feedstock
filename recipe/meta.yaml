@@ -1,5 +1,6 @@
 {% set name = "xcdat" %}
 {% set version = "0.7.3" %}
+{% set python_min = python_min|default("3.9") %}
 
 package:
   name: {{ name|lower }}
@@ -16,11 +17,11 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python >={{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - cf_xarray >=0.9.1
     - cftime
     - dask
@@ -33,6 +34,8 @@ requirements:
     - xgcm
 
 test:
+  requires:
+    - python >={{ python_min }}
   imports:
     - xcdat
 
