@@ -22,7 +22,7 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - cf_xarray >=0.10.7
+    - cf_xarray >=0.10.3
     - cftime
     - dask
     - netcdf4
