@@ -1,5 +1,5 @@
 {% set name = "xcdat" %}
-{% set version = "0.9.1" %}
+{% set version = "0.10.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/XCDAT/xcdat/archive/v{{ version }}.tar.gz
-  sha256: 30fbe681c3866030104cefac1e166e2ed9f0bf34687e1d1fe57152fe5cbfa5a5
+  sha256: 2fb448bece04fd52b299a1cfdad2fbb7adac4391d5ab03a527859b9e06e58878
 
 build:
   number: 0
@@ -33,7 +33,7 @@ requirements:
     - sparse
     - xarray >=2024.03.0
     - xesmf >=0.8.7
-    - xgcm
+    - xgcm >=0.9.0
 
 test:
   requires:
