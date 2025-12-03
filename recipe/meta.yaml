@@ -28,7 +28,9 @@ requirements:
     - netcdf4
     - numpy >=2.0.0,<3.0.0
     - pandas
+    - pooch >=1.8
     - python-dateutil
+    - regionmask
     - scipy
     - sparse
     - xarray >=2024.03.0
