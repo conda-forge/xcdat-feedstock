@@ -1,5 +1,5 @@
 {% set name = "xcdat" %}
-{% set version = "0.11.0" %}
+{% set version = "0.11.1" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/XCDAT/xcdat/archive/v{{ version }}.tar.gz
-  sha256: 0e3b9ac68c010b391221c88c4adbb6a0a9421f1dd1eb32850c25fdd3affb368c
+  sha256: 11e869e0fadf6b563db9a52c71a931d758caf361db53b83c5ed4c2aadbb9c513
 
 build:
   number: 1
@@ -21,7 +21,7 @@ requirements:
     - pip
     - setuptools
   run:
-    - python >={{ python_min }},<3.14
+    - python >={{ python_min }}
     - cf_xarray >=0.10.7
     - cftime
     - dask
