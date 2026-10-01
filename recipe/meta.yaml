@@ -1,5 +1,5 @@
 {% set name = "xcdat" %}
-{% set version = "0.11.3" %}
+{% set version = "0.11.4" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/XCDAT/xcdat/archive/v{{ version }}.tar.gz
-  sha256: 7c2fdfe008ecd22b4ab06b709fd432f1323f3b68d24d97bc1958ca6fee9e08a0
+  sha256: 36574baeb5c100a90fbc5046e3f5790c14ad93ccd9dfdfa37893a3757912b9ec
 
 build:
   number: 0
