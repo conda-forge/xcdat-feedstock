@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/XCDAT/xcdat/archive/v{{ version }}.tar.gz
-  sha256: 693f156fe095d1e2c0d63b87544e6e2f1c2f0d7c377c75be3c0b7d6f91c3c609
+  sha256: 36574baeb5c100a90fbc5046e3f5790c14ad93ccd9dfdfa37893a3757912b9ec
 
 build:
   number: 0
@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python
+    - python >={{ python_min }}
     - cf_xarray >=0.10.7
     - cftime
     - dask
